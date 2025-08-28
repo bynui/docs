@@ -1,0 +1,42 @@
+---
+title: What is Snappy
+head:
+  - - meta
+    - name: description
+      content: Snappy is a simple and straight-forward PHP framework
+  - - meta
+    - name: robots
+      content: index,follow
+  - - meta
+    - name: keywords
+      content: what is snappy, php framework, light php framework, api generator, php api generator, OOP framework, xml generator, json generator, jsonp generator, html generator
+  - - meta
+    - property: og:title
+      content: What is Snappy
+  - - meta
+    - property: og:site_name
+      content: "Snappy: straight-forward framework"
+  - - meta
+    - property: og:type
+      content: Documentation website
+  - - meta
+    - property: og:description
+      content: Snappy is a simple and straight-forward PHP framework
+  - - meta
+    - property: og:url
+      content: https://bynui.github.io/snappy/what-is-snappy.html
+---
+
+# Introduction
+
+## What is Snappy
+
+Snappy is a developer-focused PHP framework built for rapid API development with no bloat, just structure and simplicity. Built on solid Object-Oriented Programming (OOP) principles, it delivers clean, fast response generation (JSON, JSONP, XML, HTML), and a semi-automatic routing system that maps HTTP methods directly to controller functions without the need for a separate route file, while still giving you full control.
+
+## Why Snappy?
+
+This framework was created to meet the needs of small to medium-scale projects that often require rapid development and deployment. While existing backend frameworks offer many features, they may not always align with the simplicity and speed required for certain use cases. This lightweight framework was built to streamline backend development while maintaining flexibility and clarity.
+
+It has now been open-sourced in the hope that it may also be useful to others with similar needs. Contributions are welcome!
+
+To contribute, please fork the repository and submit a pull request (or merge request) with your proposed changes.

@@ -1,0 +1,1 @@
+import{_ as t,c as r,o as a,ag as o}from"./chunks/framework.Dkjpkr0A.js";const u=JSON.parse('{"title":"Helper","description":"","frontmatter":{},"headers":[],"relativePath":"helper.md","filePath":"helper.md"}'),s={name:"helper.md"};function n(i,e,d,c,p,l){return a(),r("div",null,e[0]||(e[0]=[o("",5)]))}const _=t(s,[["render",n]]);export{u as __pageData,_ as default};

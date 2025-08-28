@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/docs/snappy/",
   title: "Snappy documentation",
   description: "A manual for Snappy framework",
   themeConfig: {

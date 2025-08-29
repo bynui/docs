@@ -41,3 +41,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Copy build output
+        run: |
+          rm -rf docs/snappy
+          mkdir -p docs/snappy
+          cp -r docs/snappy-docs/.vitepress/dist/* docs/snappy/

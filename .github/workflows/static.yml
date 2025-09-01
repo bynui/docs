@@ -42,7 +42,7 @@ jobs:
 
       - name: Build VitePress
         working-directory: snappy-docs
-        run: npm run build
+        run: npm run docs:build
 
       - name: Ensure target folder exists
         run: mkdir -p docs/snappy

@@ -7,7 +7,7 @@ hero:
   text: Straight-forward framework
   tagline: No bloat. Just response
   image:
-    src: /assets/snappy.webp
+    src: ./assets/snappy.webp
     alt: Snappy framework
   actions:
     - theme: brand

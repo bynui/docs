@@ -37,11 +37,11 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        working-directory: docs/snappy-docs
+        working-directory: snappy-docs
         run: npm ci
 
       - name: Build VitePress
-        working-directory: docs/snappy-docs
+        working-directory: snappy-docs
         run: npm run build
 
       - name: Ensure target folder exists

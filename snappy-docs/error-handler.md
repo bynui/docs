@@ -39,6 +39,18 @@ Snappy has error handler that centralizes error management and streamlines debug
 
 Settings related to error handling are: `errorformat`, `showerror`, `logerror` and is explained in [this page](/configuration)
 
+Error in JSON format
+
+![error in JSON format](assets/error-json-format.webp "Error in JSON format")
+
+Error in HTML format
+
+![error in HTML format](assets/error-html-format.webp "Error in HTML format")
+
+Error in XML format
+
+![error in XML format](assets/error-xml-format.webp "Error in XML format")
+
 ## Error catching
 
 :bulb: **Usage**
@@ -74,5 +86,5 @@ throw new \Core\Error\ErrorWrapper("Error undefined function", 404);
 ```
 
 ::: warning :information_source: NOTE
-If the error code doesn't represent HTTP error response then Error Handler will produce error 500
+If the error code doesn't represent [HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status) then Error Handler will produce error 500
 :::

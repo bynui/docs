@@ -39,19 +39,21 @@ head:
 
 1. Fork [Snappy github repo](https://github.com/bynui/snappy) to your own repo and clone it to your local machine or download as zip file and extract to your PHP web server.
 
-2. Adjust the value of `RewriteBase` line in the .htaccess file and point to your Snappy working directory.
+2. Adjust the value of `RewriteBase` line in the .htaccess file located in your app root and point to your Snappy working directory.
 
 ```
  RewriteBase /yourworkingdirectory
 ```
 
-3. Do `composer install`
+3. Adjust `environment` configuration file located in `/config` directory to your needs.
+
+4. Do `composer install`
 
 This repository includes example files for a controller, middleware, model, and a SQL schema to help you get started quickly.
 To try it out:
 
 - Create a new database in MySQL.
-- Import the snappy.sql file included in this repo.
+- Import the `snappy.sql` file included in this repo.
 
 You're now ready to explore and build with Snappy!
 
@@ -60,22 +62,24 @@ You're now ready to explore and build with Snappy!
 Snappy applies MVC design pattern with OOP. There is no separated router to handle the endpoint url since the endpoint name and its handler are the controller name.
 
 ```
-.
-├─ App
-│  ├─ assets
-│  ├─ config
-│  ├─ core
-│  │  └─ error
-│  │  └─ traits
-│  ├─ log
-│  ├─ src
-│  │  └─ controller
-│  │  └─ model
-│  │  └─ middleware
-│  │  └─ helper
-│  │  └─ view
-│  └─ vendor
-└─ package.json
+App
+├─ assets
+├─ config
+├─ core
+│  ├─ error
+│  └─ traits
+├─ log
+├─ src
+│  ├─ controller
+│  ├─ model
+│  ├─ middleware
+│  ├─ helper
+│  └─ view
+├─ vendor
+├─ .gitignore
+├─ .htaccess
+├─ composer.json
+└─ index.php
 
 ```
 

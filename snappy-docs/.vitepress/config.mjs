@@ -5,6 +5,7 @@ export default defineConfig({
   base: "/docs/snappy/",
   title: "Snappy documentation",
   description: "A manual for Snappy framework",
+  outDir: "../snappy",
   themeConfig: {
     search: {
       provider: "local",

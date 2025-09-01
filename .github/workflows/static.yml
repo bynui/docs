@@ -38,7 +38,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: snappy-docs
-        run: npm Install
+        run: npm install
 
       - name: Build VitePress
         working-directory: snappy-docs

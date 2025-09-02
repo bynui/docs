@@ -109,6 +109,14 @@ If `/firstname` IS NOT DEFINED as a route then URL like yourdomain.com/yourclass
 
 Snappy supports clean, readable URLs by default using Apache’s `mod_rewrite` through `.htaccess`. However, when `mod_rewrite` is not available, change the `settings["supportHtaccess"]` configuration to be `false` and Snappy gracefully falls back to a query string-based routing mode using `/?endpoint=`, while keeping controller route definitions unchanged.
 
+::: warning :information_source: NOTE
+If `supportHtaccess` is set to `false` then you **MUST** use query string style in your URL using `/?endpoint=`.
+
+If `supportHtaccess` is set to `true` then you **MUST** use pretty URL.
+
+Otherwise, error will be thrown.
+:::
+
 _Example:_
 
 Route: `"/"`

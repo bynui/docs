@@ -63,7 +63,7 @@ export default defineConfig({
               },
             ],
           },
-          // { text: "Helper", link: "/helper" },
+          { text: "CLI", link: "/cli" },
         ],
       },
     ],

@@ -47,10 +47,18 @@ Follow the [RESTful API resource naming principles](https://restfulapi.net/resou
 
 How to create a controller:
 
+**Manual**
+
 1. Define `namespace Controller`
 2. Define `use Core\Controller`
 3. Create class name using PascalCase and extends your class from `Controller`
 4. Save it with the same class name using PascalCase under controller directory
+
+**CLI**
+
+```bash
+php snappy generate controller:YourControllerName --with-methods:get,post,put,patch,delete
+```
 
 _Example:_
 
@@ -67,7 +75,7 @@ class YourControllerName extends Controller{
 
 ## Methods
 
-Snappy will execute the method inside the controller that matches the HTTP request method used in the request — such as `get()` for GET requests, `post()` for POST requests, and so on. This convention allows you to define clean and organized RESTful endpoints without the need for manual routing configuration.
+Snappy will execute the method inside the controller that matches the HTTP request method used in the request such as `get()` for GET requests, `post()` for POST requests, and so on. This convention allows you to define clean and organized RESTful endpoints without the need for manual routing configuration.
 
 :bulb: **Usage**
 

@@ -41,20 +41,28 @@ Model layer is responsible for handling database operations using **PDO** with *
 
 How to create model:
 
+**Manual**
+
 1. Define `namespace Model`
 2. Define `use Core\Model`
 3. Create class name using PascalCase and extends your class from `Model`
 4. Save it with the same class name using PascalCase under model directory
 
+**CLI**
+
+```bash
+php snappy generate model:YourModelName
+```
+
 _Example:_
 
 ```php
-// model/YourClassName.php
+// model/YourModelName.php
 
 namespace Model
 use Core\Model
 
-class YourClassName extends Model{
+class YourModelName extends Model{
 
 }
 ```

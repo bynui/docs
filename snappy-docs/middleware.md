@@ -49,10 +49,18 @@ Middleware works like layers of an onion skin that can be illustrated as follows
 
 ## Creating middleware:
 
+**Manual**
+
 1. Define `namespace Middleware`
 2. Define `use Core\Middleware`
 3. Create class name and extends your class from `Middleware`
 4. Save it with the same class name under middleware directory
+
+**CLI**
+
+```bash
+php snappy generate middleware:YourMiddlewareName
+```
 
 :bulb: **Usage**
 

@@ -77,13 +77,27 @@ This creates a controller named `ControllerName` and a model named `OtherModelNa
 php snappy generate controller:ControllerName --with-model:OtherModelName
 ```
 
-### 4. Create controller with model and middleware (same name)
+### 4. Create controller with method(s)
+
+Create controller with all methods (get,post,put,patch,delete):
+
+```bash
+php snappy generate controller:ControllerName --with-methods
+```
+
+Create controller with one or more methods separated by commas
+
+```bash
+php snappy generate controller:ControllerName --with-methods:get,post,put,patch,delete
+```
+
+### 5. Create controller with model and middleware (same name)
 
 This creates:
 
 - Controller: `ControllerName`
 - Model: `ControllerName`
-- Middleware: `ControllerName`
+- Middleware: `ControllerName` without/with same method(s) as in making the controller
 
 ```bash
 php snappy generate controller:ControllerName --with-model --with-middleware

@@ -37,6 +37,29 @@ head:
 
 ## Installation
 
+### Option 1 (via Node):
+
+If you already have Node & npm installed, open your CLI and do this:
+
+```
+npm create nui php:snappy <your-project-name>
+```
+
+or
+
+```
+npx create-nui php:snappy <your-project-name>
+
+```
+
+`create-nui` is npm package to generate boilerplate of Node project using Express or Fastify framework in Typescript or PHP project using Snappy framework.
+
+You may use other than npm like yarn, pnpm or bun
+<br/>
+Full documentation can be read here: [https://www.npmjs.com/package/create-nui](https://www.npmjs.com/package/create-nui)
+
+### Option 2 (via Github):
+
 1. Fork [Snappy github repo](https://github.com/bynui/snappy) to your own repo and clone it to your local machine or download as zip file and extract to your PHP web server.
 
 2. Adjust the value of `RewriteBase` line in the .htaccess file located in your app root and point to your Snappy working directory.

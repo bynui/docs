@@ -3,13 +3,13 @@ title: Snappy output format
 head:
   - - meta
     - name: description
-      content: Snappy supports JSON, JSONP, XML, and HTML response formats, making it easy to build flexible APIs for web, frontend apps, or RESTful integrations.
+      content: Snappy supports JSON, JSONP, XML, CSV and HTML response formats, making it easy to build flexible APIs for web, frontend apps, or RESTful integrations.
   - - meta
     - name: robots
       content: index,follow
   - - meta
     - name: keywords
-      content: Snappy, API response formats, JSON, JSONP, XML, HTML templates, RESTful API, PHP framework, frontend API, API output types, flexible API response
+      content: Snappy, API response formats, JSON, JSONP, XML, CSV, HTML templates, RESTful API, PHP framework, frontend API, API output types, flexible API response
   - - meta
     - name: author
       content: Shindu Samodra
@@ -27,7 +27,7 @@ head:
       content: Documentation website
   - - meta
     - property: og:description
-      content: Snappy supports JSON, JSONP, XML, and HTML response formats, making it easy to build flexible APIs for web, frontend apps, or RESTful integrations.
+      content: Snappy supports JSON, JSONP, XML, CSV and HTML response formats, making it easy to build flexible APIs for web, frontend apps, or RESTful integrations.
   - - meta
     - property: og:url
       content: https://bynui.github.io/snappy/controller-formatting.html
@@ -129,6 +129,49 @@ _Output:_
 </root>
 ```
 
+## CSV
+
+:bulb: **Usage**
+
+::: tip returns CSV formatted string
+
+```php
+$this->csv( string $result, [ bool $hasHeader = false ] ): string
+```
+
+**`result`**
+
+&emsp; An associative array/fetched data from database
+
+**`hasHeader`** (optional)
+
+&emsp; An optional parameter to include/exclude column header of the CSV. Default is false
+
+:::
+
+_Example url:_
+<br/>
+yourdomain.com/examples
+
+_Output:_
+
+with header
+
+```csv
+id,FirstName,LastName,Email,Status
+10,Misha,Geroldi,mgeroldi9@google.co.uk,INACTIVE
+11,Aurlie,Skinn,askinna@fotki.com,ACTIVE
+12,Breena,Filippone,bfilipponeb@ovh.net,INACTIVE
+```
+
+without header
+
+```csv
+10,Misha,Geroldi,mgeroldi9@google.co.uk,INACTIVE
+11,Aurlie,Skinn,askinna@fotki.com,ACTIVE
+12,Breena,Filippone,bfilipponeb@ovh.net,INACTIVE
+```
+
 ## HTML
 
 :bulb: **Usage**
@@ -136,7 +179,7 @@ _Output:_
 ::: tip returns HTML formatted string
 
 ```php
-$this->html( string $template, array $result = [] ): string
+$this->html( string $template, [ array $result = [] ] ): string
 ```
 
 **`template`**
